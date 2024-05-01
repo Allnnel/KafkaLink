@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.example</groupId>
+    <artifactId>controlService</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <!-- Определение свойств, таких как версии зависимостей -->
+    <properties>
+        <java.version>1.8</java.version>
+        <spring-boot.version>2.5.5</spring-boot.version>
+        <spring.version>5.3.14</spring.version>
+        <hibernate.version>5.4.32.Final</hibernate.version>
+        <lombok.version>1.18.30</lombok.version>
+        <jakarta.persistence.version>3.1.0</jakarta.persistence.version>
+        <postgresql.version>42.2.24</postgresql.version>
+        <spring-kafka.version>2.8.0</spring-kafka.version>
+        <javax.version>2.3.1</javax.version>
+        <springfox.version>3.0.0</springfox.version>
+    </properties>
+
+    <!-- Зависимости проекта -->
+    <dependencies>
+
+        <!-- Spring Kafka -->
+        <dependency>
+            <groupId>org.springframework.kafka</groupId>
+            <artifactId>spring-kafka</artifactId>
+            <version>${spring-kafka.version}</version>
+        </dependency>
+
+        <!-- tests java class to HTTP string -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.15.1</version>
+        </dependency>
+
+        <!-- Spring Boot Starter Data JPA -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <version>${spring-boot.version}</version>
+        </dependency>
+
+        <!-- Spring Boot Starter Web -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring-boot.version}</version>
+        </dependency>
+
+        <!-- JAXB API -->
+        <dependency>
+            <groupId>javax.xml.bind</groupId>
+            <artifactId>jaxb-api</artifactId>
+            <version>${javax.version}</version>
+        </dependency>
+
+        <!-- PostgreSQL Driver -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgresql.version}</version>
+        </dependency>
+
+        <!-- swagger -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-boot-starter</artifactId>
+            <version>${springfox.version}</version>
+        </dependency>
+
+        <!-- lombok -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+
+
+    </dependencies>
+
+
+    <build>
+        <finalName>server</finalName>
+        <plugins>
+            <!-- Maven Compiler Plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                </configuration>
+            </plugin>
+
+            <!-- Spring Boot Maven Plugin -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>${spring-boot.version}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                        <configuration>
+                            <mainClass>org.example.AccessControlServiceApplication</mainClass>
+                            <outputDirectory>./</outputDirectory>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+
+</project>
