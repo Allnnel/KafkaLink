@@ -9,6 +9,6 @@ import static java.lang.System.out;
 public class KafkaConsumerExample {
     @KafkaListener(topicPattern = "oneTopic", groupId = "my_oneTopic")
     public void sendMessage(String text) {
-        out.println(text);
+        out.println( "Consumer " + text);
     }
 }
