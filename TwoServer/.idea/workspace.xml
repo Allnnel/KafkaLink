@@ -5,15 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="32ce22d2-8f26-4fc5-a914-2ebb1c8ed396" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../OneServer/src/main/java/org/example/conf/KafkaConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../OneServer/src/main/java/org/example/model/Cat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/conf/KafkaConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../OneServer/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OneServer/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OneServer/src/main/java/org/example/conf/KafkaConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OneServer/src/main/java/org/example/conf/KafkaConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../OneServer/src/main/java/org/example/kafka/KafkaConsumerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/../OneServer/src/main/java/org/example/kafka/KafkaConsumerExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kafka/KafkaConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kafka/KafkaConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/kafka/KafkaProducerExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/kafka/KafkaProducerExample.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/сontroller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/сontroller/Controller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
