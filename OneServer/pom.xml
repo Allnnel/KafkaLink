@@ -32,6 +32,13 @@
             <version>${spring-kafka.version}</version>
         </dependency>
 
+        <!-- Kafka client -->
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>${spring-kafka.version}</version> <!-- Make sure to use the appropriate version -->
+        </dependency>
+
         <!-- tests java class to HTTP string -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
